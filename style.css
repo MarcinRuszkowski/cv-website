@@ -326,3 +326,26 @@ span {
   margin-top: 2rem;
   cursor: pointer;
 }
+
+.arrow-icon-up a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 10px 10px;
+  background: var(--main-color);
+  border-radius: 1rem;
+  transition: 0.5s ease;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.arrow-icon-up a:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.arrow-icon-up a i {
+  font-size: 2.5rem;
+  color: var(--second-bg-color);
+}
