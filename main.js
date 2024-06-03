@@ -25,7 +25,7 @@ window.onscroll = () => {
 };
 // ------SCROLL REVEAL--------
 ScrollReveal({
-//   reset: true,
+  reset: true,
   distance: "80px",
   duration: 1700,
   delay: 500,
@@ -33,7 +33,7 @@ ScrollReveal({
 
 ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
 ScrollReveal().reveal(
-  ".about-text, .skills-container, .projects-box, .contact form",
+  ".about-text, .skills-container, .projects-box, .contact form, .contact-container",
   {
     origin: "bottom",
   }
@@ -43,4 +43,8 @@ ScrollReveal().reveal(".home-content h1", {
 });
 ScrollReveal().reveal(".home-content p, .about-content", {
   origin: "right",
+});
+
+document.querySelector(".contact-icon").addEventListener("click", () => {
+  document.querySelector(".contact-bar").classList.toggle("active");
 });
