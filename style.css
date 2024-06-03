@@ -221,9 +221,12 @@ span {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2.5rem;
+}
+.projects-box{
+  height: 250px;
 }
 
 .projects-container .projects-box {
